@@ -268,8 +268,8 @@
             "apiVersion": "2018-04-01",
             "location": "[resourceGroup().location]",
             "sku": {
-                "name": "Premium_LRS",
-                "tier": "Premium"
+                "name": "Standard_LRS",
+                "tier": "Standard"
             },
             "properties": {
                 "creationData": {
@@ -284,8 +284,8 @@
             "apiVersion": "2018-04-01",
             "location": "[resourceGroup().location]",
             "sku": {
-                "name": "Premium_LRS",
-                "tier": "Premium"
+                "name": "Standard_LRS",
+                "tier": "Standard"
             },
             "properties": {
                 "creationData": {
@@ -300,8 +300,8 @@
             "apiVersion": "2018-04-01",
             "location": "[resourceGroup().location]",
             "sku": {
-                "name": "Premium_LRS",
-                "tier": "Premium"
+                "name": "Standard_LRS",
+                "tier": "Standard"
             },
             "properties": {
                 "creationData": {
