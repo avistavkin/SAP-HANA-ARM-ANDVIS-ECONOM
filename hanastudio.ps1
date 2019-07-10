@@ -8,7 +8,8 @@ param (
     $sapcarUri = $baseUri + "/SapBits/SAP_HANA_STUDIO/sapcar.exe" 
     $hanastudioUri = $baseUri + "/SapBits/SAP_HANA_STUDIO/IMC_STUDIO2_212_2-80000323.SAR" 
     $jreUri = $baseUri + "/SapBits/SAP_HANA_STUDIO/serverjre-9.0.1_windows-x64_bin.tar.gz"
-    $puttyUri = "https://the.earth.li/~sgtatham/putty/latest/w64/putty-64bit-0.70-installer.msi"
+    #вот тут надо смотреть, чтобы линк был свежий и правильный!
+    $puttyUri = "https://the.earth.li/~sgtatham/putty/latest/w64/putty-64bit-0.71-installer.msi"
     $7zUri = "http://www.7-zip.org/a/7z1701-x64.msi"
     $sapcardest = "C:\SapBits\SAP_HANA_STUDIO\sapcar.exe"
     $hanastudiodest = "C:\SapBits\SAP_HANA_STUDIO\IMC_STUDIO2_212_2-80000323.SAR"
