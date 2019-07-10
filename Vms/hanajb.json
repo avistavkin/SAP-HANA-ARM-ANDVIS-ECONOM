@@ -31,14 +31,16 @@
     },
     "variables": {
         "subnetRef": "[parameters('mgmtSubnetRef')]",
-        "vmName": "hanajb",
+        "vmName": "HANAjb",
         "vNicName": "hanajbnic",
         "PIPName": "hanajbpip",
         "vhdStorageAccountName": "[uniqueString(resourceGroup().id, 'storage')]",
         "scriptFolder": ".",
         "scriptFileName": "hanastudio.ps1",
         "scriptParameters": "[concat(' -BaseURI ', parameters('customUri'))]",
-        "fileuri": "https://raw.githubusercontent.com/AzureCAT-GSI/SAP-HANA-ARM/master/hanastudio.ps1"
+        //вот эту строку тоже отредактировать 
+        //"fileuri": "https://raw.githubusercontent.com/AzureCAT-GSI/SAP-HANA-ARM/master/hanastudio.ps1"
+        "fileuri": "https://raw.githubusercontent.com/avistavkin/SAP-HANA-ARM-ANDVIS-ECONOM/master/hanastudio.ps1"
     },
     "resources": [
         {
@@ -95,9 +97,11 @@
                 "[variables('vhdStorageAccountName')]",
                 "[variables('vNICName')]"
             ],
+            //вот тут поменять тип VM
             "properties": {
                 "hardwareProfile": {
-                    "vmSize": "Standard_D1_v2"
+                    //"vmSize": "Standard_D1_v2"
+                    "vmSize": "Standard_D2_v2"
                 },
                 "osProfile": {
                     "computerName": "[variables('vmName')]",

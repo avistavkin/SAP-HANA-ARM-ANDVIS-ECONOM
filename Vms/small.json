@@ -128,7 +128,7 @@
         "api-version": "2017-06-01",
         "api-version-vm": "2017-12-01",
         "mode": "Push",
-        "baseUri": "https://raw.githubusercontent.com/AzureCAT-GSI/SAP-HANA-ARM/master/",
+        "baseUri": "https://raw.githubusercontent.com/avistavkin/SAP-HANA-ARM-ANDVIS-ECONOM/master/",
         "nicName": "[if (equals(parameters('IPAllocationMethod'),'Static'), concat(parameters('vmName'),'-static'), concat(parameters('vmName'),'-dynamic'))]",
         "subnetRef": "[parameters('HANASubnetRef')]",
         "OperatingSystemSpec": {
@@ -144,7 +144,7 @@
             "data1": 511,
             "data2": 511,
             "data3": 511
-        },
+        }, 
         "diskConfig_Standard_E32s_v3": {
             "shared": 511,
             "sap": 63,
@@ -268,8 +268,10 @@
             "apiVersion": "2018-04-01",
             "location": "[resourceGroup().location]",
             "sku": {
-                "name": "Standard_LRS",
-                "tier": "Standard"
+                "name": "Premium_LRS",
+                "tier": "Premium "
+                //"name": "Standard_LRS",
+                //"tier": "Standard"
             },
             "properties": {
                 "creationData": {
@@ -284,8 +286,10 @@
             "apiVersion": "2018-04-01",
             "location": "[resourceGroup().location]",
             "sku": {
-                "name": "Standard_LRS",
-                "tier": "Standard"
+                "name": "Premium_LRS",
+                "tier": "Premium "
+                //"name": "Standard_LRS",
+                //"tier": "Standard"
             },
             "properties": {
                 "creationData": {
@@ -300,8 +304,10 @@
             "apiVersion": "2018-04-01",
             "location": "[resourceGroup().location]",
             "sku": {
-                "name": "Standard_LRS",
-                "tier": "Standard"
+                "name": "Premium_LRS",
+                "tier": "Premium "
+                //"name": "Standard_LRS",
+                //"tier": "Standard"
             },
             "properties": {
                 "creationData": {
