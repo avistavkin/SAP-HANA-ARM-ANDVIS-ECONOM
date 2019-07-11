@@ -125,8 +125,10 @@
         }
     },
     "variables": {
-        "api-version": "2017-06-01",
-        "api-version-vm": "2017-12-01",
+        //"api-version": "2017-06-01",
+        //"api-version-vm": "2017-12-01",        
+        "api-version": "2018-04-01",
+        "api-version-vm": "2018-04-01",
         "mode": "Push",
         "baseUri": "https://raw.githubusercontent.com/avistavkin/SAP-HANA-ARM-ANDVIS-ECONOM/master/",
         "nicName": "[if (equals(parameters('IPAllocationMethod'),'Static'), concat(parameters('vmName'),'-static'), concat(parameters('vmName'),'-dynamic'))]",
